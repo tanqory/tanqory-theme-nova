@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>nova — Tanqory React theme</title>
+    <!--
+      Cloudflare Web Analytics beacon. Captures Core Web Vitals (LCP, INP,
+      CLS), TTFB, page views, and country/referrer breakdowns — no cookies,
+      no PII, no consent banner needed. The token is the per-site "Beacon
+      tag" from CF Dashboard → Web Analytics → mytanqory.com, compiled in
+      via Vite (`VITE_CF_BEACON_TOKEN`).
+
+      Injected CONDITIONALLY: when the token is unset at build time, Vite
+      leaves the %placeholder% literal in place and CF rejects every RUM
+      post — two red console errors (CORS + 404) on each page view that
+      merchants kept reporting as breakage. No token → no beacon → clean
+      console.
+    -->
+    <script>
+      ;(function () {
+        var t = '%VITE_CF_BEACON_TOKEN%'
+        if (!t || t.charAt(0) === '%') return // unset at build → skip beacon
+        var s = document.createElement('script')
+        s.defer = true
+        s.src = 'https://static.cloudflareinsights.com/beacon.min.js'
+        s.setAttribute('data-cf-beacon', JSON.stringify({ token: t, spa: true }))
+        document.head.appendChild(s)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/main.tsx"></script>
+  </body>
+</html>

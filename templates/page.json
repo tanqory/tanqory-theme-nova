@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "type": "page-body",
+      "id": "page-body",
+      "settings": {
+        "fallbackTitle": "Page",
+        "fallbackBody": "<p>This page hasn't been published yet. Add content from the admin <strong>Online store → Pages</strong> to fill this in.</p>"
+      }
+    }
+  ]
+}

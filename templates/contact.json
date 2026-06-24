@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "type": "rich-text",
+      "id": "intro",
+      "settings": {
+        "heading": "Get in touch",
+        "body": "We typically reply within one business day. For order issues, please include your order number.",
+        "align": "center"
+      }
+    },
+    {
+      "type": "contact-form",
+      "id": "form",
+      "settings": {
+        "heading": "Send us a message",
+        "subheading": "We read every note.",
+        "showPhone": false,
+        "buttonLabel": "Send message"
+      }
+    }
+  ]
+}

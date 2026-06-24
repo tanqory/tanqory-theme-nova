@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "type": "blog-posts",
+      "id": "blog-posts",
+      "settings": {
+        "fallbackTitle": "Journal",
+        "fallbackEmpty": "<p>No articles published yet. Add an article from the admin <strong>Online store → Blog posts</strong> to fill this in.</p>"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "sections": [
+    {
+      "type": "product-details",
+      "id": "main",
+      "settings": { "buttonLabel": "Add to cart" }
+    },
+    {
+      "type": "featured-collection",
+      "id": "you-may-like",
+      "settings": {
+        "heading": "You may also like",
+        "collection": "all",
+        "columns": 4,
+        "limit": 4,
+        "showViewAll": false
+      }
+    }
+  ]
+}

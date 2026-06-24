@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "type": "not-found",
+      "id": "404",
+      "settings": {
+        "heading": "Page not found",
+        "body": "The page you're looking for doesn't exist or has moved.",
+        "buttonLabel": "Back to home",
+        "buttonLink": "/"
+      }
+    },
+    {
+      "type": "featured-collection",
+      "id": "popular",
+      "settings": {
+        "heading": "Popular right now",
+        "collection": "all",
+        "columns": 4,
+        "limit": 4,
+        "showViewAll": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "type": "article-body",
+      "id": "article-body",
+      "settings": {
+        "fallbackTitle": "Article",
+        "fallbackBody": "<p>This article hasn't been published yet.</p>"
+      }
+    }
+  ]
+}

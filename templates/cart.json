@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "type": "cart-items",
+      "id": "lines",
+      "settings": {
+        "heading": "Your cart",
+        "buttonLabel": "Checkout"
+      }
+    },
+    {
+      "type": "featured-collection",
+      "id": "you-may-like",
+      "settings": {
+        "heading": "Add to your order",
+        "collection": "all",
+        "columns": 4,
+        "limit": 4,
+        "showViewAll": false
+      }
+    }
+  ]
+}

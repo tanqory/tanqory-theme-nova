@@ -1,0 +1,416 @@
+[
+  {
+    "handle": "all",
+    "title": "All products",
+    "products": [
+      {
+        "handle": "example-product-1",
+        "title": "Example product",
+        "price": {
+          "amount": "99.00",
+          "currencyCode": "USD"
+        },
+        "featuredImage": {
+          "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'><rect width='600' height='800' fill='%23f4f4f5'/><g transform='translate(300,360)' fill='none' stroke='%23a1a1aa' stroke-width='3'><rect x='-110' y='-90' width='220' height='180' rx='12'/><circle cx='-55' cy='-35' r='16' fill='%23a1a1aa'/><path d='M -110 80 L -45 15 L 10 55 L 55 25 L 110 65 L 110 90 L -110 90 Z' fill='%23a1a1aa' stroke='none'/></g><text x='300' y='520' text-anchor='middle' font-family='-apple-system,system-ui,sans-serif' font-size='22' font-weight='500' fill='%2371717a'>Example</text></svg>",
+          "altText": "Example product placeholder"
+        },
+        "options": [
+          {
+            "name": "Size",
+            "values": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "example-product-1-xs",
+            "title": "XS",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XS"
+              }
+            ]
+          },
+          {
+            "id": "example-product-1-s",
+            "title": "S",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "id": "example-product-1-m",
+            "title": "M",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "id": "example-product-1-l",
+            "title": "L",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "L"
+              }
+            ]
+          },
+          {
+            "id": "example-product-1-xl",
+            "title": "XL",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": false,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XL"
+              }
+            ]
+          }
+        ],
+        "variantId": "example-product-1-xs"
+      },
+      {
+        "handle": "example-product-2",
+        "title": "Example product",
+        "price": {
+          "amount": "99.00",
+          "currencyCode": "USD"
+        },
+        "featuredImage": {
+          "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'><rect width='600' height='800' fill='%23f4f4f5'/><g transform='translate(300,360)' fill='none' stroke='%23a1a1aa' stroke-width='3'><rect x='-110' y='-90' width='220' height='180' rx='12'/><circle cx='-55' cy='-35' r='16' fill='%23a1a1aa'/><path d='M -110 80 L -45 15 L 10 55 L 55 25 L 110 65 L 110 90 L -110 90 Z' fill='%23a1a1aa' stroke='none'/></g><text x='300' y='520' text-anchor='middle' font-family='-apple-system,system-ui,sans-serif' font-size='22' font-weight='500' fill='%2371717a'>Example</text></svg>",
+          "altText": "Example product placeholder"
+        },
+        "options": [
+          {
+            "name": "Size",
+            "values": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "example-product-2-xs",
+            "title": "XS",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XS"
+              }
+            ]
+          },
+          {
+            "id": "example-product-2-s",
+            "title": "S",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "id": "example-product-2-m",
+            "title": "M",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "id": "example-product-2-l",
+            "title": "L",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "L"
+              }
+            ]
+          },
+          {
+            "id": "example-product-2-xl",
+            "title": "XL",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XL"
+              }
+            ]
+          }
+        ],
+        "variantId": "example-product-2-xs"
+      },
+      {
+        "handle": "example-product-3",
+        "title": "Example product",
+        "price": {
+          "amount": "99.00",
+          "currencyCode": "USD"
+        },
+        "featuredImage": {
+          "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'><rect width='600' height='800' fill='%23f4f4f5'/><g transform='translate(300,360)' fill='none' stroke='%23a1a1aa' stroke-width='3'><rect x='-110' y='-90' width='220' height='180' rx='12'/><circle cx='-55' cy='-35' r='16' fill='%23a1a1aa'/><path d='M -110 80 L -45 15 L 10 55 L 55 25 L 110 65 L 110 90 L -110 90 Z' fill='%23a1a1aa' stroke='none'/></g><text x='300' y='520' text-anchor='middle' font-family='-apple-system,system-ui,sans-serif' font-size='22' font-weight='500' fill='%2371717a'>Example</text></svg>",
+          "altText": "Example product placeholder"
+        },
+        "options": [
+          {
+            "name": "Size",
+            "values": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "example-product-3-xs",
+            "title": "XS",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XS"
+              }
+            ]
+          },
+          {
+            "id": "example-product-3-s",
+            "title": "S",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "id": "example-product-3-m",
+            "title": "M",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "id": "example-product-3-l",
+            "title": "L",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "L"
+              }
+            ]
+          },
+          {
+            "id": "example-product-3-xl",
+            "title": "XL",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XL"
+              }
+            ]
+          }
+        ],
+        "variantId": "example-product-3-xs"
+      },
+      {
+        "handle": "example-product-4",
+        "title": "Example product",
+        "price": {
+          "amount": "99.00",
+          "currencyCode": "USD"
+        },
+        "featuredImage": {
+          "url": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 800'><rect width='600' height='800' fill='%23f4f4f5'/><g transform='translate(300,360)' fill='none' stroke='%23a1a1aa' stroke-width='3'><rect x='-110' y='-90' width='220' height='180' rx='12'/><circle cx='-55' cy='-35' r='16' fill='%23a1a1aa'/><path d='M -110 80 L -45 15 L 10 55 L 55 25 L 110 65 L 110 90 L -110 90 Z' fill='%23a1a1aa' stroke='none'/></g><text x='300' y='520' text-anchor='middle' font-family='-apple-system,system-ui,sans-serif' font-size='22' font-weight='500' fill='%2371717a'>Example</text></svg>",
+          "altText": "Example product placeholder"
+        },
+        "options": [
+          {
+            "name": "Size",
+            "values": [
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL"
+            ]
+          }
+        ],
+        "variants": [
+          {
+            "id": "example-product-4-xs",
+            "title": "XS",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XS"
+              }
+            ]
+          },
+          {
+            "id": "example-product-4-s",
+            "title": "S",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "S"
+              }
+            ]
+          },
+          {
+            "id": "example-product-4-m",
+            "title": "M",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "M"
+              }
+            ]
+          },
+          {
+            "id": "example-product-4-l",
+            "title": "L",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "L"
+              }
+            ]
+          },
+          {
+            "id": "example-product-4-xl",
+            "title": "XL",
+            "price": {
+              "amount": "99.00",
+              "currencyCode": "USD"
+            },
+            "availableForSale": true,
+            "selectedOptions": [
+              {
+                "name": "Size",
+                "value": "XL"
+              }
+            ]
+          }
+        ],
+        "variantId": "example-product-4-xs"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "type": "search-results",
+      "id": "results",
+      "settings": {
+        "emptyHeading": "Search nova",
+        "emptySub": "Type a query above to find products, collections, and pages."
+      }
+    }
+  ]
+}

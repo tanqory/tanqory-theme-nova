@@ -1,0 +1,14 @@
+{
+  "sections": [
+    {
+      "type": "collection-list",
+      "id": "all-collections",
+      "settings": {
+        "heading": "Shop by collection",
+        "subheading": "Browse every category we carry.",
+        "columns": 3,
+        "limit": 12
+      }
+    }
+  ]
+}

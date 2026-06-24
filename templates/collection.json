@@ -1,0 +1,15 @@
+{
+  "sections": [
+    {
+      "type": "featured-collection",
+      "id": "products",
+      "settings": {
+        "heading": "Collection",
+        "collection": "all",
+        "columns": 4,
+        "limit": 24,
+        "showViewAll": false
+      }
+    }
+  ]
+}
