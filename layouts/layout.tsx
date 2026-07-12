@@ -18,6 +18,29 @@ const TEMPLATES = import.meta.glob('../templates/*.json', { eager: true }) as Re
   { default?: PageDoc }
 >
 
+/**
+ * The store's public storefront URL, injected in local dev / preview via
+ * VITE_TANQORY_STORE_URL (the CLI sets it). On the real storefront it's unset
+ * (same-origin) so checkout/account/orders links are relative and the edge
+ * router forwards them to the central microservices. In local dev there's no
+ * edge router, so we redirect those links to the real store instead of hitting
+ * a dead localhost path.
+ */
+const STORE_URL =
+  (import.meta.env?.VITE_TANQORY_STORE_URL as string | undefined)?.replace(/\/+$/, '') || ''
+
+/** Paths owned by the centralized checkout / account / orders microservices. */
+function isCentralServicePath(p: string): boolean {
+  return (
+    p === '/checkout' ||
+    p.startsWith('/checkout/') ||
+    p === '/account' ||
+    p.startsWith('/account/') ||
+    p === '/orders' ||
+    p.startsWith('/orders/')
+  )
+}
+
 function lookupTemplate(name: string): ContentNode[] {
   for (const [key, mod] of Object.entries(TEMPLATES)) {
     if (key.endsWith(`/${name}.json`)) return mod.default?.sections ?? []
@@ -103,16 +126,22 @@ function useSoftRoute(enabled: boolean): string {
       if (url.pathname === window.location.pathname && url.hash) return
       // Centralized checkout / account / orders microservices are intercepted
       // by the storefront router at the edge — they're NOT routes the theme
-      // SPA owns. Skipping SPA nav forces a real HTTP navigation that the
-      // router can intercept and forward to studio-checkouts / studio-accounts.
-      if (
-        url.pathname === '/checkout' ||
-        url.pathname.startsWith('/checkout/') ||
-        url.pathname === '/account' ||
-        url.pathname.startsWith('/account/') ||
-        url.pathname === '/orders' ||
-        url.pathname.startsWith('/orders/')
-      ) {
+      // SPA owns. On the real storefront, skipping SPA nav forces a real HTTP
+      // navigation the edge router forwards to studio-checkouts / studio-accounts.
+      // In local dev / preview (STORE_URL set to a different origin) there's no
+      // edge router here, so redirect to the real storefront domain instead of
+      // a dead localhost path.
+      if (isCentralServicePath(url.pathname)) {
+        if (STORE_URL) {
+          try {
+            if (new URL(STORE_URL).origin !== window.location.origin) {
+              e.preventDefault()
+              window.location.href = STORE_URL + url.pathname + url.search
+            }
+          } catch {
+            /* ignore a malformed STORE_URL and fall back to a normal nav */
+          }
+        }
         return
       }
       e.preventDefault()
